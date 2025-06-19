@@ -90,3 +90,17 @@ setTimeout(() => {
   popUpOnScroll();
 }, 500);
 });
+
+const hamburger = document.getElementById('hamburger');
+const sidebar = document.getElementById('sidebar');
+const closeSidebar = document.getElementById('closeSidebar');
+
+hamburger.addEventListener('click', () => {
+  sidebar.classList.remove('hidden');
+  sidebar.classList.add('show');
+});
+
+closeSidebar.addEventListener('click', () => {
+  sidebar.classList.remove('show');
+  sidebar.classList.add('hidden');
+});

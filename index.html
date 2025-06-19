@@ -11,11 +11,11 @@
 
 <body>
   <div id="loader">
-  <div class="loader-box">
-    <div class="loader-fill"></div>
+    <div class="loader-box">
+      <div class="loader-fill"></div>
+    </div>
+    <div class="loader-percentage" id="loader-percentage">0%</div>
   </div>
-  <div class="loader-percentage" id="loader-percentage">0%</div>
-</div>
 
 
   <!-- Main Site Wrapper -->
@@ -24,6 +24,22 @@
     <!-- Navbar -->
     <nav class="navbar">
       <div class="nav-content">
+        <!-- Hamburger for mobile -->
+        <div class="hamburger" id="hamburger">
+          ☰
+        </div>
+
+        <!-- Sidebar Menu -->
+        <div class="sidebar hidden" id="sidebar">
+          <div class="close-btn" id="closeSidebar">✕</div>
+          <ul class="sidebar-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
         <h1 class="logo">BrandKit</h1>
         <ul class="nav-links">
           <li><a href="#features">Features</a></li>
@@ -82,11 +98,11 @@
       <section class="trusted animate-on-scroll">
         <h2>Trusted by Top Creators & Startups</h2>
         <div class="brand-logos">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" invert alt="GitHub">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webflow/webflow-original.svg" alt="Webflow">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js">
+          <img src="/images/react-original.svg" alt="React">
+          <img src="/images/figma-original.svg" alt="Figma">
+          <img src="/images/github-original.svg" alt="GitHub">
+          <img src="/images/webflow-original.svg" alt="Webflow">
+          <img src="/images/nextjs-original.svg" alt="Next.js">
         </div>
       </section>
 
@@ -156,17 +172,17 @@
         <h2>Meet the Team</h2>
         <div class="team-members">
           <div class="member-card">
-            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Priya Singh">
+            <img src="/images/person1.jpg" alt="Priya Singh">
             <h4>Priya Singh</h4>
             <p>Lead Designer</p>
           </div>
           <div class="member-card">
-            <img src="https://randomuser.me/api/portraits/men/36.jpg" alt="Rahul Mehta">
+            <img src="/images/person2.jpg" alt="Rahul Mehta">
             <h4>Rahul Mehta</h4>
             <p>Frontend Engineer</p>
           </div>
           <div class="member-card">
-            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Sunita Roy">
+            <img src="/images/person3.jpg" alt="Sunita Roy">
             <h4>Sunita Roy</h4>
             <p>Product Manager</p>
           </div>
@@ -174,57 +190,54 @@
       </section>
 
       <section class="faq animate-on-scroll">
-  <h2>Frequently Asked Questions</h2>
+        <h2>Frequently Asked Questions</h2>
 
-  <div class="faq-item">
-    <button class="question">What is BrandKit used for?</button>
-    <div class="answer">
-      <p>BrandKit helps designers and developers create consistent and customizable UI kits faster with built-in exports.</p>
-    </div>
-  </div>
+        <div class="faq-item">
+          <button class="question">What is BrandKit used for?</button>
+          <div class="answer">
+            <p>BrandKit helps designers and developers create consistent and customizable UI kits faster with built-in
+              exports.</p>
+          </div>
+        </div>
 
-  <div class="faq-item">
-    <button class="question">Can I use BrandKit for client projects?</button>
-    <div class="answer">
-      <p>Absolutely. All exports are license-free and ready for commercial use.</p>
-    </div>
-  </div>
+        <div class="faq-item">
+          <button class="question">Can I use BrandKit for client projects?</button>
+          <div class="answer">
+            <p>Absolutely. All exports are license-free and ready for commercial use.</p>
+          </div>
+        </div>
 
-  <div class="faq-item">
-    <button class="question">Does it support design tools like Figma or Webflow?</button>
-    <div class="answer">
-      <p>Yes! BrandKit integrates and exports assets compatible with Figma, Webflow, React, and more.</p>
-    </div>
-  </div>
+        <div class="faq-item">
+          <button class="question">Does it support design tools like Figma or Webflow?</button>
+          <div class="answer">
+            <p>Yes! BrandKit integrates and exports assets compatible with Figma, Webflow, React, and more.</p>
+          </div>
+        </div>
 
-  <div class="faq-item">
-    <button class="question">Is there a free version available?</button>
-    <div class="answer">
-      <p>Yes, we offer a free plan with access to one starter UI kit and basic export features.</p>
-    </div>
-  </div>
-</section>
+        <div class="faq-item">
+          <button class="question">Is there a free version available?</button>
+          <div class="answer">
+            <p>Yes, we offer a free plan with access to one starter UI kit and basic export features.</p>
+          </div>
+        </div>
+      </section>
 
 
       <section class="blog animate-on-scroll">
         <h2>From Our Blog</h2>
         <div class="blog-cards">
           <div class="blog-card">
-            <img
-              src="https://images.unsplash.com/photo-1602576666092-bf6447a729fc?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="Blog 1">
+            <img src="/images/blog1.avif" alt="Blog 1">
             <h3>5 Tips for Better UI Kits</h3>
             <a href="#">Read More →</a>
           </div>
           <div class="blog-card">
-            <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=400&q=80"
-              alt="Blog 2">
+            <img src="/images/blog2.avif" alt="Blog 2">
             <h3>Choosing the Perfect Palette</h3>
             <a href="#">Read More →</a>
           </div>
           <div class="blog-card">
-            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=400&q=80"
-              alt="Blog 3">
+            <img src="/images/blog3.avif" alt="Blog 3">
             <h3>Maximizing Icon Usage</h3>
             <a href="#">Read More →</a>
           </div>
@@ -253,8 +266,8 @@
 
     </div>
   </div>
-  
-<button id="theme-toggle" class="theme-toggle-btn" title="Toggle Theme">🌙</button>
+
+  <button id="theme-toggle" class="theme-toggle-btn" title="Toggle Theme">🌙</button>
 
 
   <script src="script.js"></script>
